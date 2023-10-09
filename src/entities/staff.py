@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-class Staff(BaseModel):
+class Staffs(BaseModel):
     id: int
     name: str
     address: str
