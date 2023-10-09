@@ -1,10 +1,8 @@
 from pydantic import BaseModel
-from enum import Enum
+from enums import genderEnum
 
 
-class Gender(str, Enum):
-    male = 'M'
-    female = 'F'
+
 
 class Students(BaseModel):
     id: int
