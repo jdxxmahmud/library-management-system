@@ -8,7 +8,7 @@ class Orders(BaseModel):
     studentID: Students
     orderDate: datetime
     returnDate: datetime
-    staffId: int
+    staffId: Staff
 
 
 

@@ -2,17 +2,16 @@ from sqlalchemy import Column, DateTime, ForeignKey, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 from sqlalchemy.sql import func
-from staff_model import Staff
-from student_model import Student
+from enums.genderEnum import Gender
 
 
-class Orders(Base):
+class Students(Base):
     
-    __tablename__ = "orders"    
+    __tablename__ = "students"
 
     id = Column(Integer, primary_key = True)
-    studentID = Column()
-    orderDate = Column(DateTime)
-    returnDate = Column(DateTime)
-    staffId = Column(Staff)
-    
+    name = Column(String)
+    className = Column(String)
+    section = Column(String)
+    dateOfBirth = Column(DateTime)
+    gender = Column(Gender)

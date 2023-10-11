@@ -7,5 +7,5 @@ class Students(BaseModel):
     name: str
     className: str
     section: str
-    date_of_birth: datetime
+    dateOfBirth: datetime
     gender: Gender
