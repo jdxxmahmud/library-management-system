@@ -8,9 +8,9 @@ from books_model import Books
 
 class OrderBook(Base):
     
-    __tablename__ = "ORDER_BOOK"
+    __tablename__ = "order_book"
 
     id = Column(Integer, primary_key = True)
-    orderID = Column(Orders.id)
-    bookId = Column(Books.id)
+    orderID = Column(Orders)
+    bookId = Column(Books)
     

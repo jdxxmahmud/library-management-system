@@ -9,3 +9,4 @@ class Genre(str, Enum):
     adventure = "Adventure"
     western = "Western"
     
+     

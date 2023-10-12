@@ -11,8 +11,8 @@ class Orders(Base):
     __tablename__ = "orders"    
 
     id = Column(Integer, primary_key = True)
-    studentID = Column()
+    studentID = Column(Student)
     orderDate = Column(DateTime)
     returnDate = Column(DateTime)
     staffId = Column(Staff)
-    
+     
