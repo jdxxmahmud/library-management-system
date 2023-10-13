@@ -1,14 +1,14 @@
 from pydantic import BaseModel
 from datetime import datetime
 from student import Students
-from staff import Staff
+from staff import Staffs
 
 class Orders(BaseModel):
     id: int
     studentID: Students
     orderDate: datetime
     returnDate: datetime
-    staffId: int
+    staffId: Staffs
 
 
 
