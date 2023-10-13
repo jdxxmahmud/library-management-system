@@ -6,3 +6,5 @@ class Staff(BaseModel):
     address: str
     phone: str
     email: str
+
+    
