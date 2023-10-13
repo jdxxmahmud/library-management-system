@@ -2,7 +2,7 @@ from pydantic import BaseModel
 from enums.genderEnum import Gender
 from datetime import datetime
 
-class Students(BaseModel):
+class Student(BaseModel):
     id: int
     name: str
     className: str

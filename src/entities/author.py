@@ -2,7 +2,7 @@ from datetime import datetime
 from pydantic import basemodel
 from ..enums.genderEnum import GenderEnum
 
-class Authors(basemodel):
+class Author(basemodel):
     id: int
     first_name: str
     last_name: str

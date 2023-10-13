@@ -3,7 +3,7 @@ from datetime import datetime
 from student import Students
 from staff import Staff
 
-class Orders(BaseModel):
+class Order(BaseModel):
     id: int
     studentID: Students
     orderDate: datetime
